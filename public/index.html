@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Conferance App</title>
-    <script src="socket.io/socket.io.js"></script>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
 </head>
 <body>
     <h2>Welcome to our video conferance</h2>
+    <video id="my-video" height="300px" width="300px"></video>
+    <br>
+    <video id="remote-video" height="300px" width="300px"></video>
+    <br>
+    <input id="room-id">
     <script src="client.js"></script> 
+    <button onclick="joinRoom()">Join room</button>
 </body>
 </html>
